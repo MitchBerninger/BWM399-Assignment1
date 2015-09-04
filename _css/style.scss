@@ -6,6 +6,14 @@ $boxColor: #DADADA;
 $accentColor: #DC3522;
 $alertColor: #D9CB9E;
 
+@mixin headerImg($headerPadd: 5% 0){
+    padding: $headerPadd;
+    background-size: cover;
+    width:100%;
+    margin-bottom: -33px;
+}
+%fullWidth{width:100%;}
+
 // Font Family
 @font-face {
     font-family: moderneSans;
@@ -99,11 +107,11 @@ h3{padding: 0 20px;}
 #headerDark{background-color:rgba(0,0,0,0.33);}
 .header{background-image:url(../_images/header2.jpg);
 		background-size:cover;
-   		width:100%;
+   		@extend %fullWidth
     #bannerText{width:200px;
 					padding: 3% 20% 5%;}
 }
-.header img, .regHeader img, .logHeader img, .aboutHeader img, .contactHeader img, .membersHeader img, .trackerHeader img{width:100%;}
+.header img, .regHeader img, .logHeader img, .aboutHeader img, .contactHeader img, .membersHeader img, .trackerHeader img{@extend %fullWidth}
 
 
 // Main header 
@@ -111,67 +119,49 @@ h3{padding: 0 20px;}
 
 // Register Header 
 .regHeader{background-image:url(../_images/regheader.jpg);
-		background-size:cover;
-   		width:100%;
-		padding:5% 0;
-		margin-bottom:-33px;
+		@include headerImg;
     
     #bannerText{width:250px;
-}					padding: 0 20% 2%;}
-					
+				padding: 0 20% 2%;}
+}					
 // Login Header 
 .logHeader{background-image:url(../_images/treadmill.jpg);
-		background-size:cover;
-   		width:100%;
-		margin-bottom:-33px;
+		@include headerImg(0 0);
     
     #bannerText{width:200px;
 					padding: 3% 0 5% 55%;}
 }
 // About Header 
 .aboutHeader{background-image:url(../_images/aboutHeader.jpg);
-		background-size:cover;
-   		width:100%;
-		margin-bottom:-33px;
+		@include headerImg(0 0);
     
     #bannerText{width:300px;
 						padding: 5% 0 7% 55%;}
 }
 // Memberships Header 
 .membersHeader{background-image:url(../_images/memberHeader.jpg);
-		background-size:cover;
-   		width:100%;
-		padding:5% 0;
-		margin-bottom:-33px;
+		@include headerImg;
     
     #bannerText{width:300px;
 					padding: 0 20% 2%;}
 }
 // Contact Header 
 .contactHeader{background-image:url(../_images/gymBuilding.jpg);
-		background-size:cover;
-   		width:100%;
-		padding:9% 0;
-		margin-bottom:-33px;
+		@include headerImg(9% 0);
     
     #bannerText{width:350px;
 						padding: 0 20% 2%;}
 }
 // Fitness Tracker Header 
 .trackerHeader{background-image:url(../_images/trackerHeader.jpg);
-		background-size:cover;
-   		width:100%;
-		margin-bottom:-33px;
+		@include headerImg(0 0);
     
     #bannerText{width:200px;
 						padding: 3% 0 5% 60%;}
 }
 // Admin Panel Header 
 .adminHeader{background-image:url(../_images/adminHeader.jpg);
-		background-size:cover;
-   		width:100%;
-		padding:5% 0;
-		margin-bottom:-33px;
+		@include headerImg;
     
     #bannerText{width:200px;
 						padding: 0 20% 2%;}
@@ -196,15 +186,16 @@ h3{padding: 0 20px;}
 				text-align:justify;}
 }
 // About 
-.about .textBox .textSegment, 
-.members .textBox .textSegment, 
-.tracker .textBox .textSegment, 
-.showCardio .textBox .textSegment,
-.showFree .textBox .textSegment,
-.showMachine .textBox .textSegment,
-.adminShow .textBox .textSegment{width:100%;
-					float:none;}
-
+.about, 
+.members, 
+.tracker, 
+.showCardio,
+.showFree,
+.showMachine,
+.adminShow{
+     .textBox .textSegment{@extend %fullWidth
+            float:none;}
+}
 // Memberships 
 .members .textSegment{
         h3{padding-top:20px;}
@@ -255,7 +246,7 @@ hr{border: solid 1px #374140;}
 									
 // Show Log Tables 
 .textBox table{margin-top:10px;
-			   width:100%;
+			   @extend %fullWidth
 tr{text-align:center;}
 td,th{height: 50px;
   				vertical-align: middle;
@@ -269,7 +260,7 @@ td,th{height: 50px;
 .buttonBox{float:right;
 			width:45%;
 			text-align:center;
-    img{width:100%;}
+    img{@extend %fullWidth}
 }
 
 

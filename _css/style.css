@@ -160,19 +160,20 @@ body a:hover {
 
 .regHeader {
   background-image: url(../_images/regheader.jpg);
+  padding: 5% 0;
   background-size: cover;
   width: 100%;
-  padding: 5% 0;
   margin-bottom: -33px;
-  padding: 0 20% 2%;
 }
 
 .regHeader #bannerText {
   width: 250px;
+  padding: 0 20% 2%;
 }
 
 .logHeader {
   background-image: url(../_images/treadmill.jpg);
+  padding: 0 0;
   background-size: cover;
   width: 100%;
   margin-bottom: -33px;
@@ -185,6 +186,7 @@ body a:hover {
 
 .aboutHeader {
   background-image: url(../_images/aboutHeader.jpg);
+  padding: 0 0;
   background-size: cover;
   width: 100%;
   margin-bottom: -33px;
@@ -197,9 +199,9 @@ body a:hover {
 
 .membersHeader {
   background-image: url(../_images/memberHeader.jpg);
+  padding: 5% 0;
   background-size: cover;
   width: 100%;
-  padding: 5% 0;
   margin-bottom: -33px;
 }
 
@@ -210,9 +212,9 @@ body a:hover {
 
 .contactHeader {
   background-image: url(../_images/gymBuilding.jpg);
+  padding: 9% 0;
   background-size: cover;
   width: 100%;
-  padding: 9% 0;
   margin-bottom: -33px;
 }
 
@@ -223,6 +225,7 @@ body a:hover {
 
 .trackerHeader {
   background-image: url(../_images/trackerHeader.jpg);
+  padding: 0 0;
   background-size: cover;
   width: 100%;
   margin-bottom: -33px;
@@ -235,9 +238,9 @@ body a:hover {
 
 .adminHeader {
   background-image: url(../_images/adminHeader.jpg);
+  padding: 5% 0;
   background-size: cover;
   width: 100%;
-  padding: 5% 0;
   margin-bottom: -33px;
 }
 
