@@ -1,0 +1,285 @@
+// CSS Document
+// SASS Variables
+$darkestBlack: #1E1E20;
+$darkBlack: #2A2C2B;
+$boxColor: #DADADA;
+$accentColor: #DC3522;
+$alertColor: #D9CB9E;
+
+
+
+
+// Font Family
+@font-face {
+    font-family: moderneSans;
+    src: url(../_fonts/MODERNE_SANS.ttf);
+}
+// infoBox Overall
+.infoBox{width:66%;
+		margin:auto;}
+#home h3{font-family:moderneSans, sans-serif;}
+.clear{clear: both;}
+
+// Form Style 
+.main form label {
+  width: 133px;
+  text-align: left;
+  display: block;
+  float: left;}
+.main form li{padding:5px 0;}
+ input[type="date"], input[type="text"], input[type="password"]{border:none;
+	padding:10px;}
+form select{width:146px;}
+	
+// miniButton 
+.miniButton{outline:solid 2px $darkBlack;
+			background-color:$darkBlack;
+			padding:10px 5px;
+			border:none;
+			color:white;
+			font-family:'Lato', sans-serif;
+			font-size:100%;}
+.miniButton:hover{outline:solid 2px $darkBlack;
+				background-color:white;
+				color:$darkBlack;}
+input[type="submit"] {margin-right: 10px;}
+.trackerBack{float:left;
+			margin-right:10px;}
+
+// Body
+body{background-color:$darkBlack;
+	color: #fff;
+	font-family: moderneSans, sans-serif;
+  	font-size: 100%;
+	-webkit-font-smoothing: subpixel-antialiased;}
+body a {color: #fff;
+	text-decoration: none;}
+body a:hover{color:$accentColor;}
+body a:hover {text-decoration: none;}
+
+// Logo 
+#logo{background-color:$darkestBlack;
+		padding: 10px 90px;
+    img{width:200px;}
+}
+
+			
+// Nav 
+.nav {float: right;
+	  color:#fff;
+	  clear:right;
+	  word-spacing:-3px;
+ul{float:right;}
+li {
+  display: block;
+  float: left;
+  line-height: 25px;
+  height: 29px;
+  position: relative;
+  padding: 0 10px;
+    a{display: block;
+ 	 height: 40px;
+ 	 line-height: 25px;}
+ }
+}
+
+.subNav{float:right;
+	clear:right;}
+
+// Alert Box 
+.alertBox{background-color:$alertColor;
+		color:black;
+		width:66%;
+		margin:auto;
+		padding-bottom:10px;
+h1, h2{padding: 20px 20px 0;}
+h3{padding: 0 20px;}
+}
+// Header Image 
+#headerDark{background-color:rgba(0,0,0,0.33);}
+.header{background-image:url(../_images/header2.jpg);
+		background-size:cover;
+   		width:100%;
+    #bannerText{width:200px;
+					padding: 3% 20% 5%;}
+}
+.header img, .regHeader img, .logHeader img, .aboutHeader img, .contactHeader img, .membersHeader img, .trackerHeader img{width:100%;}
+
+
+// Main header 
+#mainHeader{margin-bottom:-33px;}
+
+// Register Header 
+.regHeader{background-image:url(../_images/regheader.jpg);
+		background-size:cover;
+   		width:100%;
+		padding:5% 0;
+		margin-bottom:-33px;
+    
+    #bannerText{width:250px;
+}					padding: 0 20% 2%;}
+					
+// Login Header 
+.logHeader{background-image:url(../_images/treadmill.jpg);
+		background-size:cover;
+   		width:100%;
+		margin-bottom:-33px;
+    
+    #bannerText{width:200px;
+					padding: 3% 0 5% 55%;}
+}
+// About Header 
+.aboutHeader{background-image:url(../_images/aboutHeader.jpg);
+		background-size:cover;
+   		width:100%;
+		margin-bottom:-33px;
+    
+    #bannerText{width:300px;
+						padding: 5% 0 7% 55%;}
+}
+// Memberships Header 
+.membersHeader{background-image:url(../_images/memberHeader.jpg);
+		background-size:cover;
+   		width:100%;
+		padding:5% 0;
+		margin-bottom:-33px;
+    
+    #bannerText{width:300px;
+					padding: 0 20% 2%;}
+}
+// Contact Header 
+.contactHeader{background-image:url(../_images/gymBuilding.jpg);
+		background-size:cover;
+   		width:100%;
+		padding:9% 0;
+		margin-bottom:-33px;
+    
+    #bannerText{width:350px;
+						padding: 0 20% 2%;}
+}
+// Fitness Tracker Header 
+.trackerHeader{background-image:url(../_images/trackerHeader.jpg);
+		background-size:cover;
+   		width:100%;
+		margin-bottom:-33px;
+    
+    #bannerText{width:200px;
+						padding: 3% 0 5% 60%;}
+}
+// Admin Panel Header 
+.adminHeader{background-image:url(../_images/adminHeader.jpg);
+		background-size:cover;
+   		width:100%;
+		padding:5% 0;
+		margin-bottom:-33px;
+    
+    #bannerText{width:200px;
+						padding: 0 20% 2%;}
+}
+
+
+// Text Box 
+#title{word-spacing:-7px;}
+.textBox{padding: 20px 30px;
+		margin-bottom:20px;
+		color: #000;
+		background-color:$boxColor;}
+.textSegment{font-family:'Lato', sans-serif;
+			width:52%;
+			float:left;
+    
+    p{padding:20px 0;
+				line-height:1.5em;
+				word-spacing:3px;
+				text-align:justify;}
+}
+// About 
+.about .textBox .textSegment, 
+.members .textBox .textSegment, 
+.tracker .textBox .textSegment, 
+.showCardio .textBox .textSegment,
+.showFree .textBox .textSegment,
+.showMachine .textBox .textSegment,
+.adminShow .textBox .textSegment{width:100%;
+					float:none;}
+
+// Memberships 
+.members .textSegment{
+        h3{padding-top:20px;}
+        p{padding: 0 0 20px;
+            width:70%;
+			float:left;}
+        ul{width:70%;
+			float:left;
+			padding-left:20px;
+			line-height:1.4em;}
+        .memCostBadge{text-align: right;
+  		                margin: -30px 0 30px 0;
+            img{width:25%;}
+        }
+.textSegment h3{font-family: moderneSans, sans-serif;}
+hr{border: solid 1px #374140;}
+}
+// Contact Info Box 
+#contactBoxRight{color:white;
+				float:right;
+				width:43%;}
+.contactInfoBox{padding:10px 15px;
+				background-color:#374140;
+				margin-bottom:20px;
+				box-shadow: -5px 10px 15px #888888;}
+.contactBox{padding:10px;
+    p{font-family:'Lato', sans-serif;
+			margin-left:10px;
+			line-height:1.33em;
+			word-spacing:1px;}
+}
+.contactInfoBlock{padding:10px 0;
+    h3{word-spacing:-5px;}
+    img {width: 100%;}
+}
+#socialIcon {width: 66%;
+  			margin: auto;
+			margin-top: 20px;}					
+// Fitness Tracker 
+.tracker .textSegment form{padding: 0 0 20px;
+						width:50%;
+						float:left;
+    .memCostBadge{ text-align: right;
+  		        margin: -30px 0 30px 0;
+        img{width:25%;}
+    }
+}
+									
+// Show Log Tables 
+.textBox table{margin-top:10px;
+			   width:100%;
+tr{text-align:center;}
+td,th{height: 50px;
+  				vertical-align: middle;
+  				text-align:center;}
+.colEven{background-color:$darkBlack;
+						color:white;}
+.colOdd{background-color:$darkestBlack;
+						color:white;}
+}
+// Button Box 
+.buttonBox{float:right;
+			width:45%;
+			text-align:center;
+    img{width:100%;}
+}
+
+
+// Button 
+.bigButton{width:80%;
+			margin:auto;
+			padding:10px 0;}
+
+// Register 
+#title h1, #title h3{line-height:1.5em;}
+
+// Footer 
+#footer{padding:10px 0;
+		font-size:.75em;
+		text-align:center;}

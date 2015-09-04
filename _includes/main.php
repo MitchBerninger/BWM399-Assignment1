@@ -23,7 +23,7 @@
 	if(!isset($_SESSION['validUser'])){	
 echo <<<EOB
 <ul>
-<a href="index.php?content=register"><li>Register</li></a>
+<a href="index.php?content=members"><img src="_images/membershipsButton.png"></a>
 </ul>
 EOB;
 }

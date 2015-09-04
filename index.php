@@ -13,7 +13,7 @@ session_start();
 
 <body>
 	<div id="logo">
-		<a href="/unifit"><img src="_images/UnifitLogo.png"></a>
+		<a href="/assignment1"><img src="_images/UnifitLogo.png"></a>
     <div class="nav">
 		<?php
 			include('_includes/nav.php');
