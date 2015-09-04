@@ -6,9 +6,6 @@ $boxColor: #DADADA;
 $accentColor: #DC3522;
 $alertColor: #D9CB9E;
 
-
-
-
 // Font Family
 @font-face {
     font-family: moderneSans;
@@ -38,10 +35,11 @@ form select{width:146px;}
 			border:none;
 			color:white;
 			font-family:'Lato', sans-serif;
-			font-size:100%;}
-.miniButton:hover{outline:solid 2px $darkBlack;
+			font-size:100%;
+        &:hover{outline:solid 2px $darkBlack;
 				background-color:white;
 				color:$darkBlack;}
+}
 input[type="submit"] {margin-right: 10px;}
 .trackerBack{float:left;
 			margin-right:10px;}
@@ -51,12 +49,14 @@ body{background-color:$darkBlack;
 	color: #fff;
 	font-family: moderneSans, sans-serif;
   	font-size: 100%;
-	-webkit-font-smoothing: subpixel-antialiased;}
-body a {color: #fff;
-	text-decoration: none;}
-body a:hover{color:$accentColor;}
-body a:hover {text-decoration: none;}
+	-webkit-font-smoothing: subpixel-antialiased;
+a {color: #fff;
+	text-decoration: none;
 
+    &:hover{color:$accentColor;
+            text-decoration: none;}
+    }
+}
 // Logo 
 #logo{background-color:$darkestBlack;
 		padding: 10px 90px;
@@ -69,18 +69,18 @@ body a:hover {text-decoration: none;}
 	  color:#fff;
 	  clear:right;
 	  word-spacing:-3px;
-ul{float:right;}
-li {
-  display: block;
-  float: left;
-  line-height: 25px;
-  height: 29px;
-  position: relative;
-  padding: 0 10px;
-    a{display: block;
- 	 height: 40px;
- 	 line-height: 25px;}
- }
+    ul{float:right;}
+    li {
+      display: block;
+      float: left;
+      line-height: 25px;
+      height: 29px;
+      position: relative;
+      padding: 0 10px;
+        a{display: block;
+         height: 40px;
+         line-height: 25px;}
+     }
 }
 
 .subNav{float:right;
@@ -179,7 +179,9 @@ h3{padding: 0 20px;}
 
 
 // Text Box 
-#title{word-spacing:-7px;}
+#title{word-spacing:-7px;
+    h1,h3{line-height:1.5em;}
+}
 .textBox{padding: 20px 30px;
 		margin-bottom:20px;
 		color: #000;
@@ -275,9 +277,6 @@ td,th{height: 50px;
 .bigButton{width:80%;
 			margin:auto;
 			padding:10px 0;}
-
-// Register 
-#title h1, #title h3{line-height:1.5em;}
 
 // Footer 
 #footer{padding:10px 0;

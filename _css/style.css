@@ -76,9 +76,6 @@ body a {
 
 body a:hover {
   color: #DC3522;
-}
-
-body a:hover {
   text-decoration: none;
 }
 
@@ -253,6 +250,10 @@ body a:hover {
   word-spacing: -7px;
 }
 
+#title h1, #title h3 {
+  line-height: 1.5em;
+}
+
 .textBox {
   padding: 20px 30px;
   margin-bottom: 20px;
@@ -414,10 +415,6 @@ body a:hover {
   width: 80%;
   margin: auto;
   padding: 10px 0;
-}
-
-#title h1, #title h3 {
-  line-height: 1.5em;
 }
 
 #footer {
